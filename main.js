@@ -37,3 +37,34 @@
 // }
 // console.log(calculateTaxiFare(1));
 // console.log(calculateTaxiFare(5));
+
+
+// Arrow functions - Tasks
+
+// Task 1
+// const  celsiusToFahrenheit = celcius => (celcius * 1.8 + 32);
+
+// console.log(celsiusToFahrenheit(0));
+// console.log(celsiusToFahrenheit(25));
+
+// Task 2
+// const calculateFuelConsumption = (distanceKm, fuelLiters) => fuelLiters / distanceKm * 100;
+
+// console.log(calculateFuelConsumption(500, 40));
+
+// Task 3
+// const getTotalWithDelivery = orderAmount =>
+//     orderAmount >= 50 ? `Catdirilma pulsuzdur. (0 Azn)` :  `Catdirilma 5 Azn edir. (5 Azn)`;
+
+// console.log(getTotalWithDelivery(60));
+// console.log(getTotalWithDelivery(30));
+
+// Task 4
+// const getGrade = (score) => 
+//     score >= 90 ? "Ela":
+//     score >= 70 ? "Yaxsi" :
+//     score >= 50 ? "Kafi" : "Kesildiniz!";
+
+// console.log(getGrade(95));
+// console.log(getGrade(75));
+// console.log(getGrade(40));

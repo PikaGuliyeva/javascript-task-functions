@@ -68,3 +68,80 @@
 // console.log(getGrade(95));
 // console.log(getGrade(75));
 // console.log(getGrade(40));
+
+
+//  CALLBACK FUNCTIONS TASKS
+
+// Task 1
+// function showSuccess(pizzaName) {
+//     console.log(`${pizzaName} Pizzaniz hazirdir, nuw olsun!`);
+// }
+// function showError(needMoney) {
+//     console.log(`Catiwmayan mebleg: ${needMoney} Azn, Balansiniz catmir!`);
+// }
+// 
+// function buyPizza(pizzaName, price, myMoney, onSuccess, onError) {
+//     if (myMoney >= price) {
+//         onSuccess(pizzaName);
+//     } else {
+//         onError(price - myMoney);
+//     }
+// }
+// 
+// buyPizza("Marqarita", 8, 4, showSuccess, showError);
+// buyPizza("Meksika", 15, 20, showSuccess, showError);
+
+// Task 2
+// function sendEmail() {
+//     console.log("✉️ Xoş gəldiniz məktubu göndərildi!");
+// }
+// 
+// function registerUser(userName, callback) {
+//     console.log(`👤 ${userName} sisteme elave olundu!`);
+//     callback();
+// }
+// registerUser("Pika", sendEmail);
+
+// Task 3
+// function onSuccess(finalprice) {
+//     console.log(`✅ Kupon tətbiq edildi! Yekun qiymət: ${finalprice} Azn`);
+// }
+// function onError (msg) {
+//     console.log(`❌ Xəta: ${msg}`)
+// }
+// 
+// function applyCoupon(code, totalPrice, onSuccess, onError) {
+//     if (code === "KOD10") {
+//         onSuccess(totalPrice - 10);
+//     }else {
+//         onError("kecersiz kupon kodu!");
+//     }
+// }
+// 
+// applyCoupon("KOD10",80, onSuccess, onError);
+// applyCoupon("KOD 20", 70, onSuccess, onError);
+
+// Task 4
+// function onWin(heroName, damage) {
+//     console.log(`⚔️ ${heroName} qalib gəldi! Canavardan ${damage} xal üstün oldu!`)
+// }
+// function onLose(heroName, damage) {
+//     console.log(`💀 ${heroName} uduzdu! Canavardan ${damage} xal geridə qaldı!`)
+// }
+// function onDraw(){
+//     console.log(`🛡️ Güclər bərabərdir! Döyüş bərabərə bitdi.`)
+// }
+// 
+// function attackMonster (heroName, heroPower, monsterPower, onWin, onLose, onDraw) {
+//     if (heroPower > monsterPower) {
+//         onWin(heroName, heroPower - monsterPower)
+//     }else if (heroPower < monsterPower) {
+//         onLose(heroName, monsterPower - heroPower)
+//     }else {
+//         onDraw()
+//     }
+// }
+// 
+// attackMonster ("Spider-man", 220, 100, onWin, onLose, onDraw );
+// attackMonster ("Bat-man", 200, 300, onWin, onLose, onDraw);
+// attackMonster ("Hulk", 300, 300, onWin, onLose, onDraw);
